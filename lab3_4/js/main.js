@@ -76,6 +76,67 @@ function displayVouchers(voucherList) {
   });
 }
 
+
+function deleteVoucher(index) {
+  vouchers.splice(index, 1);
+  displayVouchers();
+}
+
+function addVoucher(event) {
+    event.preventDefault();
+
+    const title = document.getElementById("title_input1").value;
+    const price = parseFloat(document.getElementById("price_input1").value);
+    const duration = parseInt(document.getElementById("duration_input1").value);
+    const country = document.getElementById("Country1").value;
+
+    const newVoucher = new Voucher(voucherIdCounter, title, price, duration, country);
+    vouchers.push(newVoucher);
+    voucherIdCounter++;
+
+    displayVouchers();
+
+    document.getElementById("title_input1").value = "";
+    document.getElementById("price_input1").value = "";
+    document.getElementById("duration_input1").value = "";
+    document.getElementById("Country1").value = "select";
+    Tabs_control({ currentTarget: document.getElementById("submit") }, "Main_page");
+}
+function editVoucher(index) {
+  let selectedVoucher = vouchers[index];
+  document.getElementById("title_input2").value = selectedVoucher.title;
+  document.getElementById("price_input2").value = selectedVoucher.price;
+  document.getElementById("duration_input2").value = selectedVoucher.duration;
+  document.getElementById("Country2").value = selectedVoucher.country;
+  Tabs_control({ currentTarget: document.getElementById("create_tab_button") }, "Edit_voucher");
+
+  let editForm = document.getElementById("add_form2");
+
+  editForm.removeEventListener("submit", editFormSubmitHandler);
+
+  editForm.addEventListener("submit", editFormSubmitHandler);
+
+  function editFormSubmitHandler(event) {
+      event.preventDefault();
+
+      let newTitle = document.getElementById("title_input2").value;
+      let newPrice = parseFloat(document.getElementById("price_input2").value);
+      let newDuration = parseInt(document.getElementById("duration_input2").value);
+      let newCountry = document.getElementById("Country2").value;
+
+      selectedVoucher.title = newTitle;
+      selectedVoucher.price = newPrice;
+      selectedVoucher.duration = newDuration;
+      selectedVoucher.country = newCountry;
+
+      displayVouchers();
+
+      editForm.removeEventListener("submit", editFormSubmitHandler);
+      Tabs_control({ currentTarget: document.getElementById("submit") }, "Main_page");
+  }
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {
 
   const sortButton = document.getElementById("sort_button");
