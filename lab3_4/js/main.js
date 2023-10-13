@@ -76,6 +76,7 @@ function displayVouchers(voucherList) {
   });
 }
 
+
 function deleteVoucher(index) {
   vouchers.splice(index, 1);
   displayVouchers();
@@ -134,6 +135,8 @@ function editVoucher(index) {
       Tabs_control({ currentTarget: document.getElementById("submit") }, "Main_page");
   }
 }
+
+
 document.addEventListener("DOMContentLoaded", function() {
 
   const sortButton = document.getElementById("sort_button");
