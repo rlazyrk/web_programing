@@ -1,0 +1,92 @@
+.main_container {
+    display: flex;
+}
+
+.card_field {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+  }
+
+  .card-img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .main_container {
+    display: flex;
+  }
+
+  .manage_count {
+    border-right: solid 2px;
+    border-bottom: solid 2px;
+    border-bottom-right-radius: 5%;
+    padding-right: 20px;
+  }
+  .manage_header {
+    margin-top: 10px;
+  }
+  .sorting_container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .sort_button1, .count_button {
+    height: 40px;
+    width: 120px;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+  .sort_paragraph, .calculate_button_paragraph {
+    font-size: 18px;
+  }
+  .count_paragraph, .total_price_paragraph, .price{
+    font-size: 20px;
+  }
+
+  .count_button_container {
+    justify-content: center;
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .total_price {
+    margin-top: 10px;
+    display: flex;
+  }
+  
+  .total_price_paragraph {
+    padding-right: 10px;
+  }
+
+  .card_buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .edit_button, .delet_button {
+    height: 25px;
+    width: 50px;
+  }
+  
+  .card_buttons, .card-country, .card-duration, .card-price {
+    margin-top: 10px;
+  }
+  
+  .creation_container {
+    margin-top: 25px;
+    margin-left: 650px;
+    max-width: 200px;
+    border: solid 2px;
+    padding: 15px;
+  }
+  .submit_button {
+    margin-left: 50px;
+    width: 100px;
+    height: 25px;
+    border-radius: 5%;
+  }
+  

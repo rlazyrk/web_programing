@@ -1,0 +1,26 @@
+.header_section {
+    display: flex;
+    border-bottom: solid 2px;
+    padding-bottom: 10px;
+}
+
+.left_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tab_control_button, .search_button, .clear_button {
+    height: 30px;
+    width: 120px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.right_header{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 600px;
+    align-items: center;
+
+}

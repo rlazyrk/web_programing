@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab3-4</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+</head>
+<body>
+    <section class="header_section">
+        <div class="left_header">
+            <h1 class="header_title">Tour package manage</h1>
+            <button class="tab_control_button" id="home_tab_button" onclick="Tabs_control(event, 'Main_page')">
+                <a href="#Main_page">Travel vouchers</a>
+            </button>
+            <button class="tab_control_button" id="create_tab_button" onclick="Tabs_control(event, 'Create_page')">
+                <a href="#Create_page">Create vouchers</a>
+            </button>
+        </div>
+        <div class="right_header">
+            <label>
+                <input class="Search_vouchers" type="search" placeholder="Search voucher" />
+              </label>
+              <button class="search_button" id="search_button">Search</button>
+              <button class="clear_button" id="clear_button">Clear</button>
+        </div>
+    </section>
+    <section class="hero_section">
+        <div id="Main_page" class="tabcontent">
+            <div class="main_container">
+              <div class="manage_count">
+                <div class="manage_vouchers">
+                  <h2 class="manage_header">Manage vouchers</h2>
+                  <div class="sorting_container">
+                    <button id="sort_button" class="sort_button1"><p class="sort_paragraph">Sort by price</p></button>
+                  </div>
+                </div>
+        
+                <div class="count_container">
+                  <p class="count_paragraph">Count total price of voucher</p>
+                  <div class="count_button_container">
+                    <button class="count_button" id="count_button"><p class="calculate_button_paragrah">Calculate</p></button>
+                  </div>
+                  <div class="total_price">
+                    <p class="total_price_paragraph">Total price:</p>
+                    <p class="price" id="price"></p>
+                  </div>
+                </div>
+              </div>
+        
+              <ul class="card_field">
+        
+              </ul>
+            </div>
+          </div>
+        
+          <div id="Create_page" class="tabcontent">
+            <div class="creation_container">
+              <form id="add_form1" class="create_form">
+                <h1 class="create_paragraph">Create voucher</h1><br>
+        
+                <div class="form_without_header">
+                  <div class="create_container">
+                    <label for="title_input1" class="form-label">Title:</label><br>
+                    <input type="text" class="form-control1" id="title_input1"
+                           placeholder="Enter title" required /><br><br>
+                  </div>
+
+                  <div class="price_container">
+                    <label for="price_input1" class="form-label">Price:</label><br>
+                    <input type="number" class="form-control3" id="price_input1"
+                           placeholder="Enter price" required min="0" /><br><br>
+                  </div>
+
+                  <div class="price_container">
+                    <label for="price_input1" class="form-label">Duration days:</label><br>
+                    <input type="number" class="form-control3" id="duration_input1"
+                           placeholder="Enter duration" required min="0"/><br><br>
+                  </div>
+        
+                  <div class="type_container">
+                    <label for="Country1" class="form_label">Country:</label><br>
+                    <select id="Country1" name="Country" class="form-control4" required>
+                      <option value="">Select country</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="Poland">Poland</option>
+                      <option value="USA">USA</option>
+                    </select><br><br>
+                  </div>
+        
+                  <button id="submit_button1" type="submit" class="submit_button">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div id="Edit_voucher" class="tabcontent">
+            <div class="creation_container">
+              <form id="add_form2" class="create_form">
+                <h1 class="create_paragraph">Edit voucher</h1><br>
+        
+                <div class="form_without_header">
+                  <div class="create_container">
+                    <label for="title_input1" class="form-label">Title:</label><br>
+                    <input type="text" class="form-control1" id="title_input2"
+                           placeholder="Enter title" required /><br><br>
+                  </div>
+
+                  <div class="price_container">
+                    <label for="price_input1" class="form-label">Price:</label><br>
+                    <input type="number" class="form-control3" id="price_input2"
+                           placeholder="Enter price" required min="0" /><br><br>
+                  </div>
+
+                  <div class="price_container">
+                    <label for="price_input1" class="form-label">Duration days:</label><br>
+                    <input type="number" class="form-control3" id="duration_input2"
+                           placeholder="Enter duration" required min="0"/><br><br>
+                  </div>
+        
+                  <div class="type_container">
+                    <label for="Country2" class="form_label">Country:</label><br>
+                    <select id="Country2" name="Country" class="form-control4" required>
+                      <option value="">Select country</option>
+                      <option value="Ukraine">Ukraine</option>
+                      <option value="Poland">Poland</option>
+                      <option value="USA">USA</option>
+                    </select><br><br>
+                  </div>
+        
+                  <button id="submit_button2" type="submit" class="submit_button">Change</button>
+                </div>
+              </form>
+            </div>
+          </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
