@@ -1,0 +1,106 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.services {
+    background: url("../images/vector.svg") no-repeat 0 35%, url("../images/element2.svg") no-repeat right 5% bottom -3%;
+    padding-bottom: 218px;
+    margin-top: 212px;
+}
+
+.conteiner.services {
+    background-image: url("../images/element2.svg");
+    background-repeat: no-repeat;
+    background-position: right 52%;
+
+}
+
+.services__top-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__top-text .paragraph{
+    margin-top: 35px;
+}
+.paragraph.services {
+    text-align: center;
+}
+
+.services__services {
+    padding-bottom: 72px;
+    padding-top: 80px;
+    padding-right: 12px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.service_box {
+    width: 350px;
+    height: 354px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.40);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+    margin-left: 35px;
+}
+
+@keyframes shake {
+    0% {transform: translateX(0);}
+    25% {transform: translateX(-5px);}
+    50% {transform: translateX(5px);}
+    75% {transform: translateX(-5px);}
+    100% {transform: translateX(0px);}
+}
+
+.service_box:hover {
+    animation: shake 0.5s;
+}
+
+.title.service_box-content {
+    font-size: 1.8rem;
+}
+
+.services__top-text .black_rectangle {
+    margin-top: 25px;
+}
+
+.paragraph.service_box-content {
+    font-size: 1rem;
+}
+
+
+.service_box-content {
+    padding-left: 45px;
+    padding-right: 45px;
+    margin: 0;
+}
+
+.services .default_button {
+    margin-top: 40px;
+    background: transparent;
+    border-color: #458FF6;
+    color: #458FF6;
+}
+
+
+@media screen and (max-width: 768px) {
+    .services__services {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+
+    }
+
+    .paragraph.service_box-content {
+        padding-bottom: 10%;
+    }
+}

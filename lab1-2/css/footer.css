@@ -1,0 +1,40 @@
+section.footer {
+    background:
+        url("../images/element2.svg") no-repeat left -2%  bottom,
+        linear-gradient(183deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+        height: 165px;
+}
+
+.footer__nav-item {
+    display: flex;
+    margin-top: 50px;
+    margin-right: 166px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+section.footer .logo{
+    margin-top: auto;
+    margin-bottom: 25px;
+}
+
+
+@media screen and (max-width: 768px) { 
+
+    section.footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    section.footer .default_sections { 
+        justify-content: center;
+    }
+
+    .footer__nav-item {
+        margin-top: 0px;
+    }
+}
