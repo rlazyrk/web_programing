@@ -1,0 +1,8 @@
+.logo_box{
+    display: flex;
+    align-items: center;
+}
+
+.footer_logo{
+    width: 6.5rem;
+}

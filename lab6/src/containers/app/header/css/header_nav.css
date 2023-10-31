@@ -1,0 +1,33 @@
+
+
+.nav_box {
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nav_box ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav_box a {
+    text-decoration: none;
+    display: block;
+    width: 5rem;
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgba(224, 255, 255, 0.9);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    border: 2px solid black;
+}
+
+.nav_box a:hover {
+    transform: scale(1.4);
+}
+
+.nav_box li {
+    margin-right: 5rem;
+}

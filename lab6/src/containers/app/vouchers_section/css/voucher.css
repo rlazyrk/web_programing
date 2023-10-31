@@ -1,0 +1,19 @@
+.voucher_box {
+    width: 350px;
+    box-shadow: 10px 5px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(255, 255, 224, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.voucher_box:hover {
+    transform: scale(1.2);
+}
+
+.voucher_image {
+    max-width: 300px;
+    border-radius: 25px;
+}
+

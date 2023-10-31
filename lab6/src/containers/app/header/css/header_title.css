@@ -1,0 +1,13 @@
+.title_div {
+    display: flex;
+   justify-content: space-between;
+   align-items: center;
+    
+}
+
+
+
+.title_div .logo {
+    width: 5rem;
+    padding-right: 2rem;
+}

@@ -1,0 +1,17 @@
+.button_box {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.button_box a {
+    text-decoration: none;
+    display: block;
+    width: auto;
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    background-color: rgba(112, 128, 144, 0.9);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+    color: white;
+}
