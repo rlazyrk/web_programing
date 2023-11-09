@@ -17,3 +17,10 @@
     border-radius: 25px;
 }
 
+.voucher_price {
+    font-family: sans-serif;
+}
+.voucher_description{
+    font-size: 20px;
+}
+

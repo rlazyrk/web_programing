@@ -26,7 +26,8 @@ const VouchersBox = () => {
             title: "Norway",
             description: "A hot trip to the Norwegian mountains means thrilling hikes amidst lush forests and serene lakes, all under the warm sun. Explore rugged peaks, savor local cuisine, and stay in cozy cabins, immersing yourself in Norway's natural beauty and culture.",
             price: 9999
-        }
+        },
+
     ]
 
 

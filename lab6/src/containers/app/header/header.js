@@ -1,4 +1,4 @@
-import HeaderTitle from "./heder_title.js";
+import HeaderTitle from "./haeder_title.js";
 import HeaderNav from "./header_nav.js";
 import './css/header.css';
 

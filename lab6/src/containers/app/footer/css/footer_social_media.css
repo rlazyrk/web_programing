@@ -1,0 +1,9 @@
+.icon {
+    width: 3rem;
+    margin-left: 2rem;
+}
+
+.social_media_box {
+    display: flex;
+    align-items: center;
+}

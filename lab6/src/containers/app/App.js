@@ -8,10 +8,13 @@ import Footer from "./footer/footer";
 function App() {
   return (
     <div className="App">
+        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"/>
       <Header/>
+            <div className={'hero'}>
       <HeadingSection/>
         <VouchersSection/>
         <Footer/>
+            </div>
     </div>
   );
 }
