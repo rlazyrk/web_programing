@@ -1,29 +1,30 @@
 
 
-.nav_box {
+.nav_box_catalog {
     height: 100px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
 }
 
-.nav_box ul {
+.nav_box_catalog ul {
     display: flex;
     list-style-type: none;
+    justify-content: space-between;
 }
 
-.nav_box a {
+.nav_box_catalog a {
     text-decoration: none;
-    display: block;
     width: 5rem;
-    font-size: 1.5rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    font-size: 1.7rem;
+    padding: 2px 2rem;
     background-color: rgba(224, 255, 255, 0.9);
     border-radius: 12px;
     border: 1px solid black;
 }
 
 
-.nav_box li {
+.nav_box_catalog li {
     margin-right: 5rem;
 }

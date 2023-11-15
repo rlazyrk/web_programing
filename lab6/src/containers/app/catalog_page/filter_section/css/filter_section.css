@@ -1,0 +1,33 @@
+.filter_section_box_wrapper{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid black;
+}
+.filter_section_box {
+    display: flex;
+
+}
+
+.filter_choice {
+    width: 14rem;
+    font-size: 1.3rem;
+    margin-left: 2rem;
+}
+
+.apply_filters {
+    width: 8rem;
+    font-size: 1.7rem;
+    padding: 2px 2rem;
+    background-color: rgba(224, 255, 255, 0.9);
+    border-radius: 12px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Mulish', serif;
+}
+

@@ -1,22 +1,21 @@
 import './App.css';
-import Header from './header/header.js';
-import HeadingSection from './heading_section/heading_section';
-import VouchersSection from "./vouchers_section/vouchers_section";
-import Footer from "./footer/footer";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Landing_page from "./landing_page/landing_page";
+import Catalog from "./catalog_page/catalog";
 
 
 function App() {
-  return (
-    <div className="App">
-        <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet"/>
-      <Header/>
-            <div className={'hero'}>
-      <HeadingSection/>
-        <VouchersSection/>
-        <Footer/>
+    return (
+        <Router>
+            <div>
+                <Routes>
+                    <Route path="" element={<Landing_page/>} />
+                    <Route path="/catalog" element={<Catalog/>}/>
+                </Routes>
             </div>
-    </div>
-  );
+        </Router>
+    );
 }
 
 export default App;

@@ -1,0 +1,49 @@
+.voucher_box_catalog {
+    width: 350px;
+    box-shadow: 10px 5px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgba(255, 255, 224, 0.3);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 600px;
+    justify-content: center;
+}
+
+.voucher_box_catalog:hover {
+    transform: scale(1.1);
+}
+
+.voucher_image_catalog {
+    max-width: 250px;
+    border-radius: 25px;
+}
+
+.voucher_price_catalog {
+    font-family: sans-serif;
+}
+.voucher_description_catalog {
+    font-size: 20px;
+    text-align: center;
+}
+.voucher_image_text_box {
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.voucher_item_catalog_view_button {
+    width: 13.5rem;
+    font-size: 1.7rem;
+    padding: 5px 2rem;
+    background-color: rgba(224, 255, 255, 0.9);
+    border-radius: 12px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-family: 'Mulish', serif;
+}

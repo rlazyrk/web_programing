@@ -1,9 +1,9 @@
-import './css/header_nav.css'
+import './css/header_nav_catalog.css'
 
-const HeaderNav = () => {
+const HeaderNavCatalog = () => {
     return (
     <div>
-        <div className={'nav_box'}>
+        <div className={'nav_box_catalog'}>
             <ul>
                 <li>
                     <a href={"/"}>Home</a>
@@ -19,4 +19,4 @@ const HeaderNav = () => {
     </div>
     )
 }
-export default HeaderNav
+export default HeaderNavCatalog

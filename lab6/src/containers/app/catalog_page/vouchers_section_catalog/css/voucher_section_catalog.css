@@ -1,0 +1,9 @@
+.vouchers_container_catalog {
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner_voucher_box_catalog {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
