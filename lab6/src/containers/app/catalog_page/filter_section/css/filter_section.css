@@ -20,6 +20,7 @@
 }
 
 .apply_filters {
+    display: flex;
     width: 8rem;
     font-size: 1.7rem;
     padding: 2px 2rem;
@@ -27,7 +28,7 @@
     border-radius: 12px;
     border: 1px solid black;
     text-align: center;
-    vertical-align: middle;
+    justify-content: center;
     font-family: 'Mulish', serif;
 }
 

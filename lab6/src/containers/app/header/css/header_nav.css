@@ -12,8 +12,8 @@
 }
 
 .nav_box a {
+    display: flex;
     text-decoration: none;
-    display: block;
     width: 5rem;
     font-size: 1.5rem;
     padding-left: 2rem;
@@ -21,6 +21,7 @@
     background-color: rgba(224, 255, 255, 0.9);
     border-radius: 12px;
     border: 1px solid black;
+    justify-content: center;
 }
 
 

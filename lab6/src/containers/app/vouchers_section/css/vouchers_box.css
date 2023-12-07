@@ -1,5 +1,28 @@
 .vouchers_container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.inner_voucher_box {
+    display: flex;
     flex-wrap: wrap;
+}
+
+.vouchers_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vouchers_container > * {
+    flex: 0 0 calc(33.33% - 100px);
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}
+
+.view_more_box {
+    margin: 0 auto;
 }

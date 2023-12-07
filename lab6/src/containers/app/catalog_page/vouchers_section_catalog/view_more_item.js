@@ -1,9 +1,11 @@
+import './css/view_more_item.css'
 
-
-const ViewMoreItem = () => {
+const ViewMoreItem = ({id}) => {
     return (
         <div>
-            <button type={'button'} className={'voucher_item_catalog_view_button'}>View More...</button>
+            <a href={`/catalog/${id}`} className="voucher_item_catalog_view_button" >
+                View More...
+            </a>
         </div>
     )
 }

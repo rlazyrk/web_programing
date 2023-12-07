@@ -7,3 +7,16 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
+
+.vouchers_container_catalog {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.vouchers_container_catalog > * {
+    flex: 0 0 calc(33.33% - 150px);
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+}

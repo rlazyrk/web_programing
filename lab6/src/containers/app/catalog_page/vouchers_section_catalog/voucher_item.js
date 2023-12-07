@@ -10,7 +10,7 @@ const VoucherItemCatalog = (props) =>{
                 <p className={'voucher_description_catalog'}>{props.description}</p>
             </div>
             <p className={'voucher_price_catalog'}>{"Price:  " + props.price + "  UAN"}</p>
-            <ViewMoreItem/>
+            <ViewMoreItem id={props.id}/>
         </div>
     )
 }

@@ -1,9 +1,13 @@
 import './css/voucher_viewMore.css'
+import React from 'react';
 
-const VoucherViewMore = () =>{
+const VoucherViewMore = ({onClick }) =>{
+
     return(
         <div className={'button_box'}>
-            <a href={"#"}>View more</a>
+            <button className="view_more_button" onClick={onClick }>
+                View more
+            </button>
         </div>
     )
 }

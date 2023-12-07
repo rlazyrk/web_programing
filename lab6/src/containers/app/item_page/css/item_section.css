@@ -1,0 +1,58 @@
+.item_image_box {
+    padding: 2rem;
+}
+
+.item_image {
+    width: 50rem;
+    border-radius: 25px;
+}
+
+.top_part {
+    display: flex;
+}
+.right_part {
+    padding-top: 2rem;
+}
+.characteristic_box {
+    display: flex;
+}
+.characteristic_button {
+    margin-right: 2rem;
+    text-decoration-color: white;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.3rem 2rem;
+    border-radius: 12px;
+    border: 1px solid;
+}
+.characteristic_button.black {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+.characteristic_button.green {
+    background-color: green;
+    color: white;
+    border-color: green;
+}
+
+.item_description {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+.changing_box{
+    display: flex;
+    height: 1.7rem;
+}
+.output_country {
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    width: auto;
+    margin-left: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.ticket_type {
+    font-size: 1.5rem;
+}
