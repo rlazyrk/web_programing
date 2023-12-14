@@ -47,3 +47,17 @@
 .cart_button_bottom.back {
     border: 3px solid;
 }
+
+.empty_cart {
+    display: flex;
+    justify-content: center;
+}
+
+.cart_button_bottom.back.empty_cart{
+    max-width: 15rem;
+    margin: 10rem auto;
+}
+
+.empty_cart_message {
+    font-size: 50px;
+}

@@ -24,6 +24,10 @@ export const removeFromCart = (voucherId) => ({
     data: voucherId,
 });
 
+export const removeAllFromCart = () => ({
+    type: 'removeAllFromCart'
+})
+
 
 const cartReducer = (state = initialState, action) => {
     if(action.type === 'addToCart'){
@@ -65,6 +69,12 @@ const cartReducer = (state = initialState, action) => {
     else if(action.type === 'removeFromCart') {
         return {
             ...state, cart: state.cart.filter(voucher => voucher.id !== action.data)
+        }
+    }
+    else if(action.type === 'removeAllFromCart'){
+        return {
+            ...state,
+            cart: []
         }
     }
     return state;

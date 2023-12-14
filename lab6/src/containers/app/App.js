@@ -7,6 +7,8 @@ import ItemPage from "./item_page/item_page";
 import {Provider} from "react-redux";
 import CartPage from "./cart_page/cart_page";
 import { store, persistor } from './cart_page/Redux/store';
+import FormikPage from "./cart_page/formik/formik_page";
+import SuccessFormik from "./cart_page/formik/success_formik";
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
                         <Route path="/catalog" element={<Catalog/>}/>
                         <Route path="/catalog/:id" element={<ItemPage/>} />
                         <Route path="/cart" element={<CartPage/>}/>
+                        <Route path="/cart_formik" element={<FormikPage/>}/>
+                        <Route path="/formik_success" element={<SuccessFormik/>}/>
                     </Routes>
                 </div>
             </Router>

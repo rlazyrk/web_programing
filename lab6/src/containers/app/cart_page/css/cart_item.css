@@ -69,3 +69,11 @@
     text-decoration: none;
     color: black;
 }
+
+.remove_button {
+    font-size: 1.5rem;
+    width: 7rem;
+    height: 2.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
