@@ -12,7 +12,7 @@ const HeaderNav = () => {
                     <a href={"/catalog"}>Catalog</a>
                 </li>
                 <li>
-                    <a href={"#"}>Cart</a>
+                    <a href={"/cart"}>Cart</a>
                 </li>
             </ul>
         </div>

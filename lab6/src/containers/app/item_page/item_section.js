@@ -1,13 +1,13 @@
-import './css/item_section.css'
+import './css/item_section.css';
 import BottomSection from "./bottom_section";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import LoadingScreen from "../loading_screen/loading_screen";
-import {getById} from "../Rest_requests";
+import { getById } from "../Rest_requests";
 
 const ItemSection = ({ voucher }) => {
-
     const [voucherItem, setVoucherItem] = useState(null);
     const [loading, setLoading] = useState(true);
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -25,20 +25,20 @@ const ItemSection = ({ voucher }) => {
     if (loading) {
         return (
             <div>
-                <LoadingScreen/>
+                <LoadingScreen />
             </div>
         );
     }
 
-    if(!voucherItem){
+    if (!voucherItem) {
         return (
             <div>
                 <h1>ERROR 404</h1>
             </div>
-        )
+        );
     }
 
-    return(
+    return (
         <div className={'item_section_wrapper'}>
             <div className={'top_part'}>
                 <div className={'item_image_box'}>
@@ -63,9 +63,9 @@ const ItemSection = ({ voucher }) => {
                     </div>
                 </div>
             </div>
-            <BottomSection price={voucherItem.price}/>
+            <BottomSection voucherItem={voucherItem} />
         </div>
-    )
-}
+    );
+};
 
-export default ItemSection
+export default ItemSection;

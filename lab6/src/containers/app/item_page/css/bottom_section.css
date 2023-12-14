@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
     width: 95%;
-    margin-top: 5rem;
 }
 
 .bottom_button {
@@ -16,6 +15,13 @@
     border: 1px solid;
 }
 
+.count_input_box {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 7rem;
+    margin-top: 5rem;
+}
+
 .bottom_button.go_back {
     background-color: black;
     color: white;
@@ -25,6 +31,7 @@
     background-color: green;
     color: white;
     border-color: green;
+    text-decoration: none;
 }
 
 .price {
@@ -33,4 +40,13 @@
 
 .price_bottom {
     font-size: 2rem;
+}
+
+.counter_text {
+    font-weight: bold;
+    font-size: 25px;
+}
+.counter_field {
+    width: 7rem;
+    font-size: 20px;
 }
