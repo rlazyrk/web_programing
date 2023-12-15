@@ -14,7 +14,6 @@
 .nav_box a {
     display: flex;
     text-decoration: none;
-    width: 5rem;
     font-size: 1.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -22,9 +21,21 @@
     border-radius: 12px;
     border: 1px solid black;
     justify-content: center;
+    color: black;
 }
 
 
 .nav_box li {
     margin-right: 5rem;
+}
+.logout {
+    display: flex;
+    align-items: center;
+    width: 7rem;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    background-color: rgba(224, 255, 255, 0.9);
+    border-radius: 12px;
+    border: 1px solid black;
+    justify-content: center;
 }

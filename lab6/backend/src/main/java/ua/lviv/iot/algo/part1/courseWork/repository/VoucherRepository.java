@@ -5,3 +5,4 @@ import ua.lviv.iot.algo.part1.courseWork.model.Voucher;
 
 public interface VoucherRepository extends JpaRepository<Voucher, Integer> {
 }
+

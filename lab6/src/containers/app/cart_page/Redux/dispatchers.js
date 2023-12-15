@@ -6,7 +6,7 @@ const initialState = {
 
 export const addVoucherToCart = (voucher) => ({
     type: 'addToCart',
-    data: voucher,
+    data: voucher,  
 });
 
 export const addOneMoreVoucher = (voucherId) => ({

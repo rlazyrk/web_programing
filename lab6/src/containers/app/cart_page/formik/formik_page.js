@@ -18,16 +18,19 @@ const FormikPage = () => {
         firstName: '',
         lastName: '',
         email: '',
-        phoneNumber: ''
+        phoneNumber: '',
+        address: ''
     };
 
     const validationSchema = Yup.object().shape({
         firstName: Yup.string().max(20, 'Max 20 characters').required('First Name is required'),
         lastName: Yup.string().max(30, 'Max 30 characters').required('Last Name is required'),
-        email: Yup.string().email('Invalid email').required('Email is required'),
+        email: Yup.string().matches(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,10}$/, 'Invalid email').required('Email is required'),
         phoneNumber: Yup.string()
             .matches(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/, 'Invalid phone number')
-            .required('Phone Number is required')
+            .required('Phone Number is required'),
+        address: Yup.string().matches(/^вул\.\s[^\d]+(\d+\.?\s?)?[^\d]+(\d+)?\.?\sмісто\s[^\d]+$/, 'Invalid address').required('Address is required')
+
     });
 
     const handleSubmit = (values, actions) => {
@@ -48,7 +51,6 @@ const FormikPage = () => {
                         onSubmit={handleSubmit}
                     >
                         {({isSubmitting}) => (
-
                             <Form>
                                 <div className={'input'}>
                                     <div>
@@ -70,6 +72,11 @@ const FormikPage = () => {
                                         <label htmlFor="phoneNumber">Phone Number</label>
                                         <Field type="tel" id="phoneNumber" name="phoneNumber"/>
                                         <ErrorMessage name="phoneNumber" component={ErrorFormik}/>
+                                    </div>
+                                    <div>
+                                        <label htmlFor="address">Address</label>
+                                        <Field type="text" id="address" name="address"/>
+                                        <ErrorMessage name="address" component={ErrorFormik}/>
                                     </div>
 
                                 </div>

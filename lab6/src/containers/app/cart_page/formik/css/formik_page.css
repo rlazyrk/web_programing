@@ -17,8 +17,10 @@
 
 label {
     display: block;
-    margin-bottom: 8px;
-    width: 10rem;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 input {

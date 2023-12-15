@@ -1,0 +1,21 @@
+.background_color.register {
+    height: 43.3rem;
+}
+
+.problem_label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register_button{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 7rem;
+    background-color: rgba(224, 255, 255, 0.9);
+    border-radius: 12px;
+    border: 1px solid black;
+    text-decoration-color: white;
+    margin-bottom: 2rem;
+}

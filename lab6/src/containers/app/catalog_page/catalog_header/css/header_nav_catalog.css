@@ -22,9 +22,22 @@
     background-color: rgba(224, 255, 255, 0.9);
     border-radius: 12px;
     border: 1px solid black;
+    color: black;
 }
 
 
 .nav_box_catalog li {
     margin-right: 5rem;
+}
+
+.logout {
+    display: flex;
+    align-items: center;
+    width: 7rem;
+    font-size: 1.5rem;
+    padding: 2px 2rem;
+    background-color: rgba(224, 255, 255, 0.9);
+    border-radius: 12px;
+    border: 1px solid black;
+    justify-content: center;
 }

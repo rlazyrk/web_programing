@@ -13,7 +13,7 @@ const BottomSection = ({voucherItem}) => {
     };
     const handleAddToCart = () => {
         for(let i =0; i < counter; i++) {
-            dispatch(addVoucherToCart(voucherItem));
+            dispatch(addVoucherToCart(voucherItem, localStorage.getItem('currentUser')));
         }
     };
 
